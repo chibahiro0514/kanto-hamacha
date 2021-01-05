@@ -639,7 +639,7 @@ input[type="reset"]{
 	/* sec01 sec02 代表・副代表紹介
 	------------------------------*/
 	.vMid{
-		padding: 0 20px;
+		padding: 0 20px;	
 	}
 
 	/* sec05 各種スケジュール 
@@ -975,7 +975,7 @@ input[type="reset"]{
 	------------------------------*/
 
 	.link_wrapper{
-		margin: 5px;
+		margin: 25px;
 	}
 
 	.link_wrapper img{
