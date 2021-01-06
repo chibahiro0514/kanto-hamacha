@@ -1,0 +1,112 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;}
+ul{list-style:none;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;}
+q:before,q:after{content:'';}
+object,embed{vertical-align:top;}
+legend{display:none;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+img,abbr,acronym,fieldset{border:0;}
+
+body{
+	font: 14px/1.9 'Noto Sans JP', Arial, Verdana, '游ゴシック', 'YuGothic','ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo',sans-serif;
+	font-weight: 300;
+	-webkit-text-size-adjust:100%;
+	-webkit-appearance: none;
+	overflow-x: hidden;
+	color: #fff;
+	background: #000;
+}
+
+a{
+	color: #0066ff;
+	text-decoration: none;
+}
+
+a:hover, .active{
+  text-decoration: underline;
+}
+
+a:active, a:focus,input:active, input:focus{outline:0;}
+
+.wrapper{
+	margin: 20px;
+	padding: 15px;
+	background-color: #1d3131;
+	border-radius: 8px;
+	
+}
+
+h2{
+	font-size: 20px;
+	text-align: center;
+}
+
+h3{
+	text-align: right;
+	margin-right: 20px;
+}
+
+p{
+	text-align: center;
+}
+
+ol {
+  counter-reset: my-counter;
+  list-style: none;
+  padding: 0;
+}
+ 
+li {
+  margin-bottom: 10px;
+  padding-left: 30px;
+	position: relative;
+	cursor: pointer;
+	width: fit-content;
+}
+
+
+li:before {
+  content: counter(my-counter);
+  counter-increment: my-counter;
+  background-color: #28ac8f;
+  color: #222;
+  display: block;
+  float: left;
+  line-height: 22px;
+  margin-left: -30px;
+  text-align: center;
+  height: 22px;
+  width: 22px;
+	border-radius: 50%;
+}
+
+.basic:before{
+	background-color: #86ac41;
+}
+ 
+.afterclick.active {
+		text-decoration: line-through;
+		font-weight: 500;
+		color: gray;
+}
+
+.afterclick.active:before{
+	background-color:gray;
+}
+
+.afterclick > span:last-of-type,
+.afterclick.active > span:first-of-type
+{
+		display: none;
+}
+
+.afterclick.active > span:last-of-type {
+		display: inline;
+}
