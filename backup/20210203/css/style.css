@@ -127,6 +127,45 @@ section h2{
 	color: #55ACEE;
 }
 
+/* エフェクト関係(intersection-observer.jsより)
+------------------------------------------------------------*/
+
+.raisewithbigtittle1{
+	transition: opacity 5.0s, transform 4s;
+	opacity: 0;
+	transform: scale(0.9, 0.9);
+}
+.raisewithbigtittle2{
+	transition: opacity 10.0s, transform 4s;
+	opacity: 0;
+	transform: scale(0.9, 0.9);
+}
+.raisewithbig {
+	transition: opacity 1.4s, transform 1.5s;
+	opacity: 0;
+	transform: scale(0.9, 0.9);
+}
+.raisetoup {
+	transition: opacity 1.4s, transform 1.5s;
+	opacity: 0;
+	transform: translateY(40px);
+}
+.raisetoright {
+	transition: opacity 1.4s, transform 1.5s;
+	opacity: 0;
+	transform: translatex(-40px);
+}
+.raisetoleft {
+	transition: opacity 1.4s, transform 1.5s;
+	opacity: 0;
+	transform: translatex(40px);
+}
+.show {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+
 /* SEC01 関東ハマチャチャ同好会紹介
 ------------------------------------------------------------*/
 
@@ -184,7 +223,7 @@ section h2{
 	-webkit- transform: translateY(-50%) translateX(-50%);
 }
 
-/* SEC03 そもそもハマチャチャとは
+/* SEC03 ハマチャチャとは
 ------------------------------------------------------------*/
 
 #sec03 .ref_article{
