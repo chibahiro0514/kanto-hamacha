@@ -148,17 +148,17 @@ section h2{
 .raisetoup {
 	transition: opacity 1.4s, transform 1.5s;
 	opacity: 0;
-	transform: translateY(40px);
+	transform: translateY(20px);
 }
 .raisetoright {
 	transition: opacity 1.4s, transform 1.5s;
 	opacity: 0;
-	transform: translatex(-40px);
+	transform: translatex(-20px);
 }
 .raisetoleft {
 	transition: opacity 1.4s, transform 1.5s;
 	opacity: 0;
-	transform: translatex(40px);
+	transform: translatex(20px);
 }
 .show {
 	opacity: 1;
