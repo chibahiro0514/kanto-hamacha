@@ -1,0 +1,1033 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;}
+ul{list-style:none;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;}
+q:before,q:after{content:'';}
+object,embed{vertical-align:top;}
+legend{display:none;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+img,abbr,acronym,fieldset{border:0;}
+
+body{
+	font: 14px/1.9 'Noto Sans JP', Arial, Verdana, '游ゴシック', 'YuGothic','ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo',sans-serif;
+	font-weight: 300;
+	-webkit-text-size-adjust:100%;
+	-webkit-appearance: none;
+	overflow-x: hidden;
+	color: #fff;
+	background: #000;
+}
+
+a{
+	color: #0066ff;
+	text-decoration: none;
+}
+
+a:hover, .active{
+  text-decoration: underline;
+}
+
+a:active, a:focus,input:active, input:focus{outline:0;}
+
+
+/* ヘッダー
+------------------------------------------------------------*/
+#header{
+  	position: relative;
+    overflow: hidden;
+    width:100%;
+    height:100%;
+}
+
+#toptitle{
+	position: absolute;
+  top: 48%;
+	width: 100%;
+	-webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+	color: #fff;
+	line-height: 1.2;
+	text-align: center;
+}
+
+#toptitle h1{
+	font-size: 70px;
+	font-family: '昇龍TTF教育漢字', cursive;
+	margin-bottom: 10	px;
+	font-weight:normal;
+}
+
+#toptitle h2{
+	font-size: 35px;
+	font-weight:normal;
+	font-family: '昇龍TTF教育漢字', cursive;
+}
+
+
+/* フッター
+------------------------------------------------------------*/
+#footer{
+	clear: both;
+	padding: 50px 10px 50px 0;
+	text-align: center;
+	font-size: 12px;
+}
+
+
+/* 共通
+------------------------------------------------------------*/
+h1, h2{
+	font-family: 'Josefin Sans', 'Noto Sans JP',serif;
+}
+
+img{
+	width: 100%;
+	height: auto;
+}
+
+section{clear:both;}
+
+section h2{
+	font-size: 22px;
+	font-weight:normal;
+	text-align: center;
+}
+
+.inner{
+	width: 94%;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+
+.col2 li{
+	display: inline-block;
+	width: 100%;
+  	margin: 20px 0 20px 0;
+}
+
+.sns-wide br{
+	display: none;
+}
+
+#facebook{
+	color: #3b5998;
+}
+
+#youtube{
+	color: #cd201f;
+}
+
+#twitter{
+	color: #55ACEE;
+}
+
+/* エフェクト関係(intersection-observer.jsより)
+------------------------------------------------------------*/
+
+.raisewithbigtittle1{
+	transition: opacity 4.0s, transform 4s;
+	opacity: 0;
+	transform: scale(0.9, 0.9);
+}
+.raisewithbigtittle2{
+	transition: opacity 8.0s, transform 4s;
+	opacity: 0;
+	transform: scale(0.9, 0.9);
+}
+.raisewithbig {
+	transition: opacity 1.4s, transform 1.5s;
+	opacity: 0;
+	transform: scale(0.9, 0.9);
+}
+.raisetoup {
+	transition: opacity 1.4s, transform 1.5s;
+	opacity: 0;
+	transform: translateY(20px);
+}
+.raisetoright {
+	transition: opacity 1.4s, transform 1.5s;
+	opacity: 0;
+	transform: translatex(-20px);
+}
+.raisetoleft {
+	transition: opacity 1.4s, transform 1.5s;
+	opacity: 0;
+	transform: translatex(20px);
+}
+.show {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+
+/* SEC01 関東ハマチャチャ同好会紹介
+------------------------------------------------------------*/
+
+.introduction
+{
+	width: 60%;
+	margin: 0 auto;
+	padding-bottom: 80px;
+}
+
+.youtube_movie{
+	display: block;
+	margin: 40px auto 0 auto;
+}
+
+/* SEC02 代表・副代表より
+------------------------------------------------------------*/
+.wrap{
+	clear: both;
+	width: 100%;
+	background: #2b2b2b;
+}
+
+.bg{
+	line-height: 0;
+}
+
+.txt h2{
+	padding: 0 0 20px !important;
+}
+
+#sec02 .intro-name{
+	text-align: center;
+}
+
+#sec02 h1{
+	font-size: 26px;
+	font-weight:bold;
+	text-align: center;
+	display:inline
+}
+
+#sec02 h2{
+	font-size: 18px;
+	font-weight:normal;
+	text-align: center;
+	display:inline
+}
+
+.other_members p{
+	position: absolute;
+	top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+	-webkit- transform: translateY(-50%) translateX(-50%);
+}
+
+/* SEC03 ハマチャチャとは
+------------------------------------------------------------*/
+
+#sec03 .ref_article{
+	text-align: center;
+}
+
+#sec03 a{
+	color:#fff;
+}
+
+#sec03 a:hover{
+	font-weight:bold;
+}
+
+#sec03 iframe{
+	text-align:center;
+}
+
+/* SEC04 バリエーション紹介
+------------------------------------------------------------*/
+.col3 li{
+	margin-bottom: 50px;
+}
+
+.col3 img{
+	max-width: 288px;
+	display: block;
+	margin: -5px auto 20px;
+}
+
+#sec04{
+	background: url(../images/bgSec04.jpg) no-repeat 100% 100% fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+	color: #fff;
+}
+
+#sec04 h2{
+	padding-bottom:10px
+}
+
+#sec04 h3{
+	text-align: center;
+	font-size: 20px;
+	margin: 20px 0 10px 0;
+}
+
+.intro-movie{
+	width:auto;
+	height:auto;
+	border-radius: 5px;
+}
+
+/* SEC05 各種スケジュール
+------------------------------------------------------------*/
+#sec05{
+	padding-top: 0px;
+}
+
+#sec05 .sec05title{
+	margin-bottom: 20px;
+}
+
+#sec05 .sec05title{
+	margin-bottom: 20px;
+}
+
+#sec05 h3{
+	color:lemonchiffon;
+}
+
+#sec05 .sec05linktitle{
+	padding-top: 40px;
+}
+
+#sec05 dl{
+	line-height: 1.2;
+}
+
+#sec05 dt{
+	clear: left;
+	float: left;
+	display: block;
+	width: 30%;
+	margin-right: 10%;
+	margin-bottom: 20px;
+	text-align: right;
+	line-height: 1.6em;
+}
+
+#sec05 dd{
+	width: 60%;
+	float: left;
+	text-align: left;
+	margin-bottom: 15px;
+	line-height: 1.6em;
+}
+
+#sec05 header{
+	display: none;
+}
+
+#sec05 .inner{
+	text-align:center;
+}
+
+#sec05 a{
+	color:#fff;
+}
+
+#sec05 a:hover{
+	font-weight:bold;
+}
+
+#sec05 iframe{
+	border-radius: 1.5px;
+}
+
+.link_wrapper{
+	background-color: #2b2b2b;
+	width: auto;
+	margin: 50px;
+	overflow: hidden;
+	text-align: center;
+	padding-bottom: 50px;
+	border-radius: 5px;
+}
+
+.link_wrapper_inner{
+	display: inline-block;
+}
+
+.link_wrapper img{
+	width: 350px;
+	height: auto;
+}
+
+.link_content{ 	
+	width: 450px;
+	text-align: center;
+	float: left;
+} 
+
+.link_content_leftside{
+	border-right: #ccc solid 1px;
+}
+
+/* SEC06 ご依頼・お問合せ
+------------------------------------------------------------*/
+#sec06{
+	background: #2b2b2b;
+}
+
+#sec06 p{
+	text-align: center;
+}
+
+/* 問合せフォーム(SEC06 ご依頼・お問合せ内)
+------------------------------------------------------------*/
+.lead-form{
+  text-align: center;
+  font-size:20px;
+}
+
+#sec06 .inner{
+	width:800px;
+}
+
+form{
+  width:auto;
+	margin:0 auto;
+}
+
+.item1{
+  overflow: hidden;
+	margin-bottom: 20px;
+	margin-right:20px;
+	float:left;
+}
+
+.item2{
+  overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.item3{
+  overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.label{
+  float: left;
+  margin-right: 20px;
+  width:135px;
+  border-left: solid 3px #e0505d;
+  padding-left: 10px;
+}
+
+.inputs1{
+  float: left;
+  width: 280px;
+}
+
+.inputs2{
+  float: left;
+  width: 455px;
+}
+
+.inputs3{
+  float: left;
+	width: 778px;
+	margin-bottom:20px;
+}
+
+input[type="text"],input[type="email"]{
+  border: solid 1px #aaa;
+  border-radius:5px;
+  padding:10px;
+  font-size: 15px;
+}
+
+textarea{
+  border: solid 1px #aaa;
+  border-radius:5px;
+  padding: 10px;
+  height: 160px;
+  font-size: 15px;
+}
+
+.btn-area{
+  text-align: center;
+}
+
+input[type="submit"]{
+  background: #e0505c;
+  border: none;
+  color: white;
+  font-size:17px;
+  font-weight:bold;
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+
+input[type="reset"]{
+  background: #aaa;
+  border: none;
+  color: white;
+  font-size:17px;
+  font-weight:bold;
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+
+/* RESPONSIVE 設定
+------------------------------------------------------------*/
+
+@media only screen and (min-width: 1200px){
+
+	/* 共通
+	------------------------------*/
+	.inner{
+		width: 1024px;
+		padding-bottom: 120px;
+	}
+
+	section h2{
+		padding: 50px 0 20px;
+	}
+
+	.txt h2{
+		padding: 0 0 20px !important;
+	}
+
+}
+
+@media only screen and (min-width: 1025px){
+
+	/* メニューバー
+	------------------------------*/
+  a#menu{
+		display:none;
+	}
+
+	.panel{
+		display:block !important;
+	}
+
+	#mainnav{
+		position:fixed;
+		top: 0;
+		width:100%;
+		z-index:500;
+		background: rgba(0,0,0,.5);
+		transition: .3s ;
+		overflow: hidden;
+	}
+
+	#mainnav ul{
+		float: left;
+		left:50%;
+		position: relative;
+	}
+
+	#mainnav li{
+		display: inline-block;
+		padding: 20px 8px 20px;
+		font-size: 14px;
+		font-weight: 300;
+		transition: .3s;
+		left: -50%;
+		position: relative;
+		float: left;
+	}
+
+  #mainnav a{
+		color: #fff;
+		position: relative;
+	}
+
+	#mainnav.changeNav{
+		background: rgba(255,255,255,.9);
+		transition: .3s ;
+	}
+
+	#mainnav.changeNav a{
+		color: #000;
+	}
+
+	#mainnav.changeNav li{
+		padding: 20px 8px;
+	}
+
+	#mainnav .sns-wide{
+		text-align: right;
+	}
+
+	#mainnav i{
+		font-size: 18px;
+		margin:24px 15px 0 0;
+	}
+
+	#mainnav i{
+		padding-right: 6px;
+		font-size:px
+	}
+
+	.sns-narrow{
+		display:none;
+	}
+
+	/* sec02 代表・副代表紹介
+	------------------------------*/
+	.photo_responsive{
+		display:none;
+	}
+	
+}
+
+@media only screen and (min-width: 800px){
+
+	/* 共通
+	------------------------------*/
+	body{
+		font-size:14px;
+	}
+
+	/* SEC02 代表・副代表より
+	------------------------------*/
+	#sec02 img{
+		height: 210%;
+	}
+
+	.txt, .bg{
+		width: 50%;
+		float: left;
+		display: table;
+		background: #2b2b2b;
+	}
+
+	.bg{
+		background: #000;
+	}
+
+	#sec02_02 .txt, #sec02_02 .bg{
+		float: right;
+	}
+
+	.vMid{
+		display: table-cell;
+		padding: 0 100px;
+		vertical-align: middle;
+	}
+
+	/* SEC03 バリエーション紹介
+	-----------------*/
+	.col3{
+		text-align: center;
+	}
+
+	.col3 li{
+		display: inline-block;
+		width: 30%;
+		padding: 0 1.5%;
+		margin-bottom: 0;
+		vertical-align: top;
+		text-align: left;
+	}
+
+		/* sec04 バリエーション紹介
+	------------------------------*/
+	#sec04 br{
+		display:none;
+	}
+
+
+	/* SEC05 各種スケジュール
+	-----------------*/
+	#sec05{
+		padding-top: 0px;
+	}
+
+  #footer{
+		padding: 30px 10px 70px 0;
+	}
+
+}
+
+@media only screen and (max-width: 1280px){
+
+	/* メニューバー
+	------------------------------*/
+	#mainnav i{
+		margin:24px 5px 0 0;
+	}
+
+}
+
+@media only screen and (max-width: 1199px){
+
+	/* メニューバー
+	------------------------------*/
+	section h2{
+		padding: 50px 0 20px 0;
+	}
+
+	/* sec01 関東ハマチャチャ同好会とは
+	------------------------------*/
+	#sec01 h2{
+		padding: 50px 0 20px;
+	}
+
+	/* sec01 sec02 代表・副代表紹介
+	------------------------------*/
+	.vMid{
+		padding: 0 20px;	
+	}
+
+	/* sec05 各種スケジュール 
+	------------------------------*/
+
+	.link_wrapper_responsive{
+		display: flex;
+		justify-content: center;
+	}
+
+	.link_wrapper li{
+		width: 100%;
+		list-style-type: none;
+		text-align: center;
+		padding-bottom: 20px;
+	}
+
+
+}
+
+@media only screen and (max-width: 1180px){
+
+	/* メニューバー
+	------------------------------*/	
+	#mainnav ul{
+		left:0%;
+		margin-left: 10px;
+	}
+
+	#mainnav li{
+		padding: 20px 5px 20px;
+		left: 0%;
+	}
+
+	#mainnav.changeNav li{
+		padding: 20px 5px;
+	}
+
+	.sns-wide{
+		height:auto;
+		vertical-align: top;
+		margin-right:8px;
+	}
+
+	.sns-wide br{
+		display: inline;
+	}
+	
+	/* sec02 代表・副代表紹介
+	------------------------------*/
+	#sec02 p{
+		display:inline;
+		vertical-align: middle;
+	}
+
+}
+
+@media only screen and (max-width: 1024px){
+
+	/* メニューバー
+	------------------------------*/
+  a#menu{
+  	display: inline-block;
+  	position: relative;
+  	width: 40px;
+  	height: 40px;
+  	margin: 10px 10px 0px 0px ;
+	}
+
+	#menuBtn{
+  	display: block;
+  	position: fixed;
+  	top: 30px;
+  	right: 25px;
+  	width: 18px;
+  	height: 2px;
+  	margin: -1px 0 0 -7px;
+  	background: #fff;
+		transition: .3s;
+		z-index: 200;
+	}
+
+	#menuBtn:before, #menuBtn:after{
+  	display: block;
+  	content: "";
+  	position: absolute;
+  	top: 50%;
+  	left: 0;
+  	width: 18px;
+  	height: 2px;
+  	background: #fff;
+  	transition: .3s;
+	}
+
+	#menuBtn:before{
+		margin-top: -7px;
+	}
+
+	#menuBtn:after{
+		margin-top: 5px;
+	}
+
+	a#menu .close{
+  	background: transparent;
+	}
+
+	a#menu .close:before, a#menu .close:after{
+		margin-top: 0;
+		background: #fff;
+	}
+
+	a#menu .close:before{
+  	transform: rotate(-45deg);
+  	-webkit-transform: rotate(-45deg);
+	}
+
+	a#menu .close:after{
+  	transform: rotate(-135deg);
+  	-webkit-transform: rotate(-135deg);
+	}
+
+	.panel{
+		width: 100%;
+		overflow: hidden;
+		left: 0;
+		top: 60px;
+		z-index: 100;
+	}
+
+	#mainnav{
+		position: fixed;
+		top: 0;
+		right: 0;
+		width: 100%;
+		text-align: right;
+		z-index:500;
+		overflow: hidden;
+	}
+
+	#mainnav ul{
+		border-bottom: 1px solid #ccc;
+		background: #fff;
+		text-align: left;
+	}
+
+	#mainnav li a{
+		position: relative;
+		display:block;
+		padding:15px 25px;
+		border-bottom: 1px solid #ccc;
+		color: #000;
+		font-weight: 400;
+	}
+
+	#mainnav li a:before{
+		display: block;
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 5px;
+		width: 6px;
+		height: 6px;
+		margin: -4px 0 0 0;
+		border-top: solid 2px #000;
+		border-right: solid 2px #000;
+		-webkit-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+
+	#mainnav .sns-wide{
+		display: none;
+	}
+
+	.sns-narrow {
+		position:fixed;
+		z-index:100;
+		width:100%;
+		top:60px;
+	}
+
+	.sns-narrow .sns-box{
+		height: 22px;
+		margin: 0 20px 13px 0;
+		text-align: right;
+	}
+
+	.sns-narrow a{
+		display: inline-block;
+		vertical-align: top;
+		font-size: 22px;
+		text-align: center;
+		overflow: hidden;
+		height: 22px;
+	}
+
+	.sns-narrow i{
+		margin:0;
+		vertical-align: top;
+		text-align: center;
+		overflow: hidden;
+	}
+
+	#mainnav li{
+		padding: 0px;
+	}
+
+	#mainnav.changeNav li{
+		padding: 0px;
+	}
+
+	#mainnav ul{
+		left:0%;
+		margin-left: 0px;
+	}
+
+	/* sec01 代表・副代表より
+	------------------------------*/
+	.photo_pc{
+		display:none;
+	}
+
+	/* sec05 各種スケジュール
+	------------------------------*/
+	.link_wrapper{
+		margin: 25px;
+	}
+
+	.link_content{
+		text-align: center;
+		display: inline-block;
+	}	
+
+	.schedule{
+		width: 100%;
+	}
+
+	.link_content_leftside{
+		border-right: none;
+		margin-bottom: 25px;
+	}
+
+	
+}
+
+@media only screen and (max-width: 799px){
+
+	/* sec01 header
+	------------------------------*/
+	#toptitle{
+		top: 50%;
+	}
+	
+	#toptitle h1{
+		font-size: 55px;
+	}
+
+	#toptitle h2{
+		font-size: 32px;
+	}
+
+	#header{
+			overflow: hidden;
+	}
+
+	#topImg{
+			margin-left: -33%;
+			width:180%;
+	}
+
+	/* sec01 関東ハマチャチャ同好会とは
+	------------------------------*/
+	.introduction{
+		width: 80%;
+	}
+
+	/* sec04 バリエーション紹介
+	------------------------------*/
+	.col3 li{
+		margin: 0 auto;
+		display: block;
+	max-width: 288px;
+	}
+
+	/* sec05 各種スケジュール
+	------------------------------*/
+	/* .schedule{
+		width: 100%;
+	}
+
+	.link_content_leftside{
+		border-right: none;
+		margin-bottom: 25px;
+	} */
+	
+	/* sec06 ご依頼・お問合せ 
+	------------------------------*/
+	#sec06 .inner{
+		width:auto;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.item1{
+		margin-right: 0px;
+		float:none;
+	}
+
+	.inputs1, .inputs2, .inputs3{
+		width: 	93%;
+	}
+}
+
+@media only screen and (max-width: 640px){
+
+	/* header 
+	------------------------------*/	
+	#toptitle h1{
+		font-size: 28px;
+	}
+
+	#toptitle h2{
+		font-size: 18px;
+	}
+
+	/* 共通 
+	------------------------------*/	
+	.youtube_movie{
+		width: auto;
+		height: auto;
+	}	
+
+	/* sec05 各種スケジュール
+	------------------------------*/
+
+	.link_wrapper{
+		margin: 25px;
+	}
+
+	.link_wrapper img{
+		width: 90%;
+	}
+
+	.link_wrapper p{
+		width: 90%;
+		text-align: center;
+		display: inline-block;
+	}
+
+	#sec05 .sec05linktitle {
+    padding-top: 30px;
+  }
+}
