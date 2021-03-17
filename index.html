@@ -10,6 +10,27 @@
 <link rel="stylesheet" href="css/mailform.css" />
 <link rel="stylesheet" href="css/style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script>
+$(function(){
+  // #で始まるa要素をクリックした場合に処理
+  $('a[href^=#_]').click(function(){
+    // 移動先を0px調整する。0を30にすると30px下にずらすことができる。
+    var adjust = -63;
+    // スクロールの速度（ミリ秒）
+    var speed = 400;
+    // アンカーの値取得 リンク先（href）を取得して、hrefという変数に代入
+    var href= $(this).attr("href");
+    // 移動先を取得 リンク先(href）のidがある要素を探して、targetに代入
+    var target = $(href == "#_" || href == "" ? 'html' : href);
+    // 移動先を調整 idの要素の位置をoffset()で取得して、positionに代入
+    var position = target.offset().top + adjust;
+    // スムーススクロール linear（等速） or swing（変速）
+    $('body,html').animate({scrollTop:position}, speed, 'swing');
+    return false;
+  });
+});
+</script>
+
 <script src="js/script.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CE2XJS74GF"></script>
@@ -17,7 +38,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-CE2XJS74GF');
 </script>
 </head>
@@ -30,7 +50,6 @@
 		<p id="menuWrap"><a id="menu"><span id="menuBtn"></span></a></p>
 
 		<div class="panel">
-
 			<ul>
 				<li><a href="#header">トップ</a></li>
 				<li><a href="#sec01">関東ハマチャチャ同好会とは</a></li>
@@ -42,11 +61,11 @@
 			</ul>
 	
 			<div class="sns-wide">
-					<a href="https://www.facebook.com/pages/category/Art/%E9%96%A2%E6%9D%B1%E3%83%8F%E3%83%9E%E3%83%81%E3%83%A3%E3%83%81%E3%83%A3%E5%90%8C%E5%A5%BD%E4%BC%9A-188130445288117/"><i class="fab fa-facebook-square fa-fw" id="facebook"></i></a>
-					<a href="https://www.youtube.com/playlist?list=PLa5-SyG3HKq6uDkATIRP21x7FkH7s-2EQ"><i class="fab fa-youtube fa-fw" id="youtube"></i></a>
-					<a href="https://twitter.com/hamachacha2016"><i class="fab fa-twitter fa-fw" id="twitter"></i></a>
-				</div>
+				<a href="https://www.facebook.com/pages/category/Art/%E9%96%A2%E6%9D%B1%E3%83%8F%E3%83%9E%E3%83%81%E3%83%A3%E3%83%81%E3%83%A3%E5%90%8C%E5%A5%BD%E4%BC%9A-188130445288117/"><i class="fab fa-facebook-square fa-fw" id="facebook"></i></a>
+				<a href="https://www.youtube.com/playlist?list=PLa5-SyG3HKq6uDkATIRP21x7FkH7s-2EQ"><i class="fab fa-youtube fa-fw" id="youtube"></i></a>
+				<a href="https://twitter.com/hamachacha2016"><i class="fab fa-twitter fa-fw" id="twitter"></i></a>
 			</div>
+		</div>
 	</nav>
 	<!-- //メニューバー -->
 
@@ -75,12 +94,11 @@
 	<!-- sec01 関東ハマチャチャ同好会紹介 -->
 	<section id="sec01">
 		<div class="inner">
-			<div class="WhatsNewWrapper">
-				<h2>What's New</h2>
-				【レッスン情報】<br>
-				<a href="#sec05">スケジュール</a>に3月27日(土)Webレッスン情報を更新しました。
-			</div>
-
+			<div class="whats_new_wrapper">
+				<h2><span class="under">What's New</span></h2>
+					<p><div class="title">【レッスン情報】</div>
+					<a href="#_sec05">スケジュール</a> に『3月27日（土）Webレッスン情報』を追加しました。</p>
+				</div>
 			<div class="box raisetoup">
 				<header>
 					<h2>「関東ハマチャチャ同好会」とは</h2>
@@ -133,7 +151,7 @@
 				<div class="vMid">
 					<div class="intro-name box raisetoleft"><h1>【メンバー紹介】<h2>(AtoZ)</h2></h1></div>
 					<br>
-					<div class="box raisetoleft"><p>あいあい/ あづみ/ おかぴ/ かっぱ/ ガレ/ きみどり/ きりん/ けるみん/ こうへい/ こころ/ しんたろう/ たいら/ たかつ/ たすくん/ たるしる/ ばっちゃん/ はと/ ひらり/ ぽん酢/ まねこ/ めいと/ ゆかり/ よしお/ 黒衣/ 紫音/ KODAI/ Kope/ MASA/ O-chan, etc., </p></div>
+					<div class="box raisetoleft"><p>あいあい/ あづみ/ おかぴ/ かっぱ/ ガレ/ きみどり/ きりん/ けるみん/ こうへい/ ころろ/ しんたろう/ たいら/ たかつ/ たすくん/ たるしる/ ばっちゃん/ はと/ ひらり/ ぽん酢/ まねこ/ めいと/ ゆかり/ よしお/ 黒衣/ 紫音/ KODAI/ Kope/ MASA/ O-chan, etc., </p></div>
 				</div>
 			</div>
 		</div>
@@ -203,6 +221,7 @@
 
 	<!-- sec05 各種スケジュール -->
 	<section id="sec05">
+		<section id="_sec05"></section>
 		<div class="inner">
 			<div class="box raisewithbig"><h2>各種スケジュール</h2></div>
 			<h3>【ご連絡】<br>
